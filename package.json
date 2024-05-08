@@ -1,0 +1,76 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/dashboard",
+  "dependencies": {
+    "@ant-design/icons": "5.3.7",
+    "@ant-design/plots": "1.2.6",
+    "@ant-design/pro-components": "2.7.1",
+    "@ant-design/pro-layout": "7.19.0",
+    "@preact/signals-react": "2.0.1",
+    "@sedan-utils/is-blank": "1.0.0",
+    "@testing-library/jest-dom": "5.17.0",
+    "@testing-library/react": "15.0.7",
+    "@testing-library/user-event": "14.5.2",
+    "@types/jest": "29.5.12",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "@wangeditor/editor": "5.1.23",
+    "@wangeditor/editor-for-react": "1.0.6",
+    "ahooks": "3.7.11",
+    "antd": "5.17.0",
+    "babel-plugin-transform-typescript-metadata": "0.3.2",
+    "class-transformer": "0.5.1",
+    "craco": "0.0.3",
+    "dayjs": "1.11.11",
+    "file-saver": "2.0.5",
+    "inversify": "6.0.2",
+    "js-cutil": "1.0.24050803",
+    "js-react": "1.0.24050803",
+    "node-sass": "9.0.0",
+    "query-string": "9.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "9.0.1",
+    "react-router-dom": "6.23.0",
+    "react-scripts": "5.0.1",
+    "reflect-metadata": "0.2.2",
+    "typescript": "5.4.5",
+    "web-vitals": "3.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.10",
+    "cross-env": "7.0.3",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2",
+    "prettier": "3.2.5"
+  },
+  "scripts": {
+    "start": "cross-env REACT_APP_ENV=development craco start",
+    "build": "cross-env REACT_APP_ENV=production craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "lint-staged": "lint-staged",
+    "husky": "husky install && npx husky add .husky/pre-commit \"npm run lint\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
